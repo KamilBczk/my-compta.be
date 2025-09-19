@@ -15,7 +15,7 @@ export default function Header({ lang }: HeaderProps) {
   const links = HeaderItems({ lang });
   const { logoHeader } = getImages();
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white">
+    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-md">
       <div className="py-4 relative">
         <Separator align="right" />
         <div className="z-index-10 relative">
