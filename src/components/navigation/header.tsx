@@ -11,7 +11,6 @@ interface HeaderProps {
 }
 
 export default function Header({ lang }: HeaderProps) {
-  console.log(lang);
   const links = HeaderItems({ lang });
   const { logoHeader } = getImages();
   return (
