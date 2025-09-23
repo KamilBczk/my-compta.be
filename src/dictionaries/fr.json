@@ -163,7 +163,7 @@
         "title": "La vision du fondateur",
         "description": [
           "Fondateur de My Compta, M. Abou Farhat est expert-comptable inscrit au tableau de l'ordre et dispose de plus de 16 ans d'expérience en comptabilité, fiscalité et gestion d'entreprise.",
-          "Rigoureux et à l'écoute, il a créé My Compta en 2020 pour offrir un accompagnement personnalisé et digitalisé aux indépendants, TPE et particuliers partout en Belgique."
+          "Rigoureux et à l'écoute, il a créé My Compta en 2020 pour offrir un accompagnement personnalisé et digitalisé aux indépendants, PME et particuliers partout en Belgique."
         ]
       }
     },
@@ -171,7 +171,7 @@
       "hero": {
         "title": "Accompagnement comptable sur mesure",
         "description": [
-          "My Compta assure la gestion complète de votre comptabilité, que vous soyez indépendant, profession libérale ou TPE. Nous vous garantissons un suivi rigoureux et conforme à vos obligations légales pour que vous puissiez vous concentrer sur le développement de votre activité.",
+          "My Compta assure la gestion complète de votre comptabilité, que vous soyez indépendant, profession libérale ou PME. Nous vous garantissons un suivi rigoureux et conforme à vos obligations légales pour que vous puissiez vous concentrer sur le développement de votre activité.",
           "Grâce à notre approche personnalisée, vous bénéficiez de conseils adaptés à votre situation et d'une vision claire de votre santé financière."
         ]
       },
@@ -230,7 +230,7 @@
       "hero": {
         "title": "Optimisation fiscale",
         "description": [
-          "My Compta vous aide à maîtriser votre fiscalité en adaptant votre situation aux lois en vigueur tout en optimisant vos revenus. Que vous soyez indépendant, dirigeant de TPE ou particulier, nous analysons votre situation afin de réduire légalement votre charge fiscale et de sécuriser vos décisions patrimoniales.",
+          "My Compta vous aide à maîtriser votre fiscalité en adaptant votre situation aux lois en vigueur tout en optimisant vos revenus. Que vous soyez indépendant, dirigeant de PME ou particulier, nous analysons votre situation afin de réduire légalement votre charge fiscale et de sécuriser vos décisions patrimoniales.",
           "Notre objectif : transformer la fiscalité en levier de croissance et non en contrainte."
         ]
       },
@@ -283,7 +283,7 @@
     "default": {
       "title": "My Compta - Expert Comptable | Comptabilité & Fiscalité Bruxelles",
       "description": "Expert comptable en région bruxelloise. My Compta accompagne particuliers et entreprises en comptabilité, fiscalité, création d'entreprise. Service personnalisé et digitalisé.",
-      "keywords": "expert comptable, comptabilité, fiscalité, création entreprise, Bruxelles, TPE, indépendant"
+      "keywords": "expert comptable, comptabilité, fiscalité, création entreprise, Bruxelles, PME, indépendant"
     },
     "home": {
       "title": "My Compta - Expert Comptable à Laeken | Ensemble vers la réussite",
@@ -303,8 +303,8 @@
     "services": {
       "accounting": {
         "title": "Comptabilité sur mesure | My Compta - Expert Comptable",
-        "description": "Gestion comptable complète pour indépendants, professions libérales et TPE. Suivi rigoureux, conseils personnalisés et optimisation fiscale.",
-        "keywords": "comptabilité indépendant, gestion comptable TPE, déclarations TVA, comptes annuels"
+        "description": "Gestion comptable complète pour indépendants, professions libérales et PME. Suivi rigoureux, conseils personnalisés et optimisation fiscale.",
+        "keywords": "comptabilité indépendant, gestion comptable PME, déclarations TVA, comptes annuels"
       },
       "businessSetup": {
         "title": "Création d'entreprise | My Compta - Accompagnement complet",
