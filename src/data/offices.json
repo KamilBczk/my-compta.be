@@ -1,0 +1,304 @@
+{
+  "offices": [
+    {
+      "slug": "jette",
+      "name": {
+        "fr": "Jette",
+        "en": "Jette"
+      },
+      "postalCode": "1090",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Jette, commune résidentielle proche du centre de Bruxelles, idéale pour les indépendants.",
+        "en": "Chartered accountant in Jette, residential municipality close to Brussels center, ideal for freelancers."
+      },
+      "keywords": {
+        "fr": "expert comptable Jette, comptabilité indépendant Jette, conseil fiscal Jette",
+        "en": "chartered accountant Jette, freelancer accounting Jette, tax advice Jette"
+      },
+      "coordinates": {
+        "latitude": "50.8775",
+        "longitude": "4.3258"
+      },
+      "address": {
+        "street": "Avenue de Jette 120",
+        "city": "Jette",
+        "postalCode": "1090",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "ganshoren",
+      "name": {
+        "fr": "Ganshoren",
+        "en": "Ganshoren"
+      },
+      "postalCode": "1083",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Ganshoren, petite commune conviviale du nord-ouest de Bruxelles.",
+        "en": "Chartered accountant in Ganshoren, small friendly municipality in northwest Brussels."
+      },
+      "keywords": {
+        "fr": "expert comptable Ganshoren, comptabilité PME Ganshoren, création entreprise Ganshoren",
+        "en": "chartered accountant Ganshoren, SME accounting Ganshoren, business creation Ganshoren"
+      },
+      "coordinates": {
+        "latitude": "50.8667",
+        "longitude": "4.3122"
+      },
+      "address": {
+        "street": "Place Emile Bossaert 10",
+        "city": "Ganshoren",
+        "postalCode": "1083",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "uccle",
+      "name": {
+        "fr": "Uccle",
+        "en": "Uccle"
+      },
+      "postalCode": "1180",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Uccle, commune prisée du sud de Bruxelles, idéal pour les professionnels libéraux.",
+        "en": "Chartered accountant in Uccle, popular municipality in south Brussels, ideal for liberal professionals."
+      },
+      "keywords": {
+        "fr": "expert comptable Uccle, comptabilité Uccle, conseil fiscal Uccle",
+        "en": "chartered accountant Uccle, accounting Uccle, tax advice Uccle"
+      },
+      "coordinates": {
+        "latitude": "50.7989",
+        "longitude": "4.3441"
+      },
+      "address": {
+        "street": "Avenue Winston Churchill 250",
+        "city": "Uccle",
+        "postalCode": "1180",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "koekelberg",
+      "name": {
+        "fr": "Koekelberg",
+        "en": "Koekelberg"
+      },
+      "postalCode": "1081",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Koekelberg, commune dynamique de l'ouest bruxellois avec vue sur la basilique.",
+        "en": "Chartered accountant in Koekelberg, dynamic municipality in west Brussels with view of the basilica."
+      },
+      "keywords": {
+        "fr": "expert comptable Koekelberg, comptabilité entreprise Koekelberg, gestion fiscale",
+        "en": "chartered accountant Koekelberg, business accounting Koekelberg, tax management"
+      },
+      "coordinates": {
+        "latitude": "50.8614",
+        "longitude": "4.3281"
+      },
+      "address": {
+        "street": "Place Henri Vanhuffel 6",
+        "city": "Koekelberg",
+        "postalCode": "1081",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "woluwe-saint-lambert",
+      "name": {
+        "fr": "Woluwe-Saint-Lambert",
+        "en": "Woluwe-Saint-Lambert"
+      },
+      "postalCode": "1200",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Woluwe-Saint-Lambert, commune résidentielle huppée de l'est bruxellois.",
+        "en": "Chartered accountant in Woluwe-Saint-Lambert, upscale residential municipality in east Brussels."
+      },
+      "keywords": {
+        "fr": "expert comptable Woluwe-Saint-Lambert, comptabilité patrimoine, optimisation fiscale",
+        "en": "chartered accountant Woluwe-Saint-Lambert, wealth accounting, tax optimization"
+      },
+      "coordinates": {
+        "latitude": "50.8444",
+        "longitude": "4.4331"
+      },
+      "address": {
+        "street": "Avenue Paul Hymans 120",
+        "city": "Woluwe-Saint-Lambert",
+        "postalCode": "1200",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "auderghem",
+      "name": {
+        "fr": "Auderghem",
+        "en": "Auderghem"
+      },
+      "postalCode": "1160",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Auderghem, commune verte du sud-est bruxellois, proche de la forêt de Soignes.",
+        "en": "Chartered accountant in Auderghem, green municipality in southeast Brussels, close to Sonian Forest."
+      },
+      "keywords": {
+        "fr": "expert comptable Auderghem, comptabilité Auderghem, conseil entreprise durable",
+        "en": "chartered accountant Auderghem, accounting Auderghem, sustainable business advice"
+      },
+      "coordinates": {
+        "latitude": "50.8167",
+        "longitude": "4.4278"
+      },
+      "address": {
+        "street": "Chaussée de Wavre 1160",
+        "city": "Auderghem",
+        "postalCode": "1160",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "ixelles",
+      "name": {
+        "fr": "Ixelles",
+        "en": "Ixelles"
+      },
+      "postalCode": "1050",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Ixelles, commune dynamique et cosmopolite de Bruxelles, centre d'affaires important.",
+        "en": "Chartered accountant in Ixelles, dynamic and cosmopolitan municipality of Brussels, important business center."
+      },
+      "keywords": {
+        "fr": "expert comptable Ixelles, comptabilité entreprise Ixelles, création société Ixelles",
+        "en": "chartered accountant Ixelles, business accounting Ixelles, company creation Ixelles"
+      },
+      "coordinates": {
+        "latitude": "50.8283",
+        "longitude": "4.3707"
+      },
+      "address": {
+        "street": "Chaussée de Wavre 1050",
+        "city": "Ixelles",
+        "postalCode": "1050",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "evere",
+      "name": {
+        "fr": "Evere",
+        "en": "Evere"
+      },
+      "postalCode": "1140",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Evere, commune du nord-est bruxellois proche de l'aéroport, idéale pour les entreprises logistiques.",
+        "en": "Chartered accountant in Evere, northeast Brussels municipality close to airport, ideal for logistics companies."
+      },
+      "keywords": {
+        "fr": "expert comptable Evere, comptabilité logistique, conseil import-export",
+        "en": "chartered accountant Evere, logistics accounting, import-export advice"
+      },
+      "coordinates": {
+        "latitude": "50.8719",
+        "longitude": "4.4031"
+      },
+      "address": {
+        "street": "Square Hoedemaekers 15",
+        "city": "Evere",
+        "postalCode": "1140",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "schaerbeek",
+      "name": {
+        "fr": "Schaerbeek",
+        "en": "Schaerbeek"
+      },
+      "postalCode": "1030",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Schaerbeek, commune multiculturelle en plein développement économique.",
+        "en": "Chartered accountant in Schaerbeek, multicultural municipality in full economic development."
+      },
+      "keywords": {
+        "fr": "expert comptable Schaerbeek, comptabilité PME Schaerbeek, accompagnement entrepreneurs",
+        "en": "chartered accountant Schaerbeek, SME accounting Schaerbeek, entrepreneur support"
+      },
+      "coordinates": {
+        "latitude": "50.8667",
+        "longitude": "4.3731"
+      },
+      "address": {
+        "street": "Place Eugène Verboekhoven 15",
+        "city": "Schaerbeek",
+        "postalCode": "1030",
+        "country": "Belgique"
+      }
+    },
+    {
+      "slug": "forest",
+      "name": {
+        "fr": "Forest",
+        "en": "Forest"
+      },
+      "postalCode": "1190",
+      "region": {
+        "fr": "Bruxelles",
+        "en": "Brussels"
+      },
+      "description": {
+        "fr": "Expert comptable à Forest, commune du sud-ouest bruxellois en pleine revitalisation urbaine.",
+        "en": "Chartered accountant in Forest, southwest Brussels municipality in full urban revitalization."
+      },
+      "keywords": {
+        "fr": "expert comptable Forest, comptabilité startup Forest, accompagnement jeunes entreprises",
+        "en": "chartered accountant Forest, startup accounting Forest, young business support"
+      },
+      "coordinates": {
+        "latitude": "50.8206",
+        "longitude": "4.3269"
+      },
+      "address": {
+        "street": "Avenue Victor Rousseau 75",
+        "city": "Forest",
+        "postalCode": "1190",
+        "country": "Belgique"
+      }
+    }
+  ]
+}

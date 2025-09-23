@@ -3,80 +3,85 @@ import Container from "../kago-ui/Container";
 import getImages from "@/utils/getImages";
 import Image from "next/image";
 import Separator from "../separator";
+import { Dictionary } from "@/utils/useDictionary";
 
-export default function Footer() {
+interface FooterProps {
+  dictionary: Dictionary;
+}
+
+export default function Footer({ dictionary }: FooterProps) {
   const { logoFooter } = getImages();
 
   const footerItems = [
     [
       {
-        label: "Notre adresse",
+        label: dictionary.footer.address.title,
         href: null,
         target: null,
       },
       {
-        label: "Rue des Genévriers 56",
+        label: dictionary.footer.address.street,
         href: "https://maps.app.goo.gl/bAh6maEzH1q4RDFn9",
         target: "_blank",
       },
       {
-        label: "1020 Bruxelles",
+        label: dictionary.footer.address.city,
         href: "https://maps.app.goo.gl/bAh6maEzH1q4RDFn9",
         target: "_blank",
       },
     ],
     [
       {
-        label: "Contact",
+        label: dictionary.footer.contact.title,
         href: null,
         target: null,
       },
       {
-        label: "info@my-compta.be",
-        href: "mailto:contact@mycompta.be",
+        label: dictionary.footer.contact.email,
+        href: "mailto:info@my-compta.be",
         target: null,
       },
       {
-        label: "028 96 89 11",
+        label: dictionary.footer.contact.phone,
         href: "tel:+3228968911",
         target: null,
       },
     ],
     [
       {
-        label: "Membre ITAA",
+        label: dictionary.footer.certification.title,
         href: null,
         target: null,
       },
       {
-        label: "Institute for Tax Advisors and Accountants",
+        label: dictionary.footer.certification.organization,
         href: null,
         target: null,
       },
       {
-        label: "N° 50.63.60.20",
+        label: dictionary.footer.certification.number,
         href: null,
         target: null,
       },
     ],
     [
       {
-        label: "Liens utiles",
+        label: dictionary.footer.links.title,
         href: null,
         target: null,
       },
       {
-        label: "Plan du site",
+        label: dictionary.footer.links.sitemap,
         href: "/sitemap.xml",
         target: null,
       },
       {
-        label: "Mentions légales",
+        label: dictionary.footer.links.legal,
         href: "/mentions-legales",
         target: null,
       },
       {
-        label: "Politique de confidentialité",
+        label: dictionary.footer.links.privacy,
         href: "/politique-de-confidentialite",
         target: null,
       },
@@ -95,7 +100,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 text-white">
             <div>
               <Image src={logoFooter} alt="Logo" />
-              <p className="font-medium mt-4">N° d'entreprise BE0746.708.869</p>
+              <p className="font-medium mt-4">
+                {dictionary.footer.companyNumber}
+              </p>
             </div>
             {footerItems.map((item, index) => (
               <div key={index} className="text-center">
@@ -136,18 +143,18 @@ export default function Footer() {
         <Container>
           <div className="flex justify-between items-center">
             <p>
-              Réalisé par:{" "}
+              {dictionary.footer.credits.madeBy}{" "}
               <a
-                href="https://kago.group"
+                href="https://kago-group.com/?utm_source=my-compta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                Kago Group
+                {dictionary.footer.credits.company}
               </a>
             </p>
             <p className="absolute left-1/2 transform -translate-x-1/2">
-              © 2025. My Compta. All rights reserved.
+              {dictionary.footer.credits.copyright}
             </p>
           </div>
         </Container>

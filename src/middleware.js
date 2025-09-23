@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 // import { auth } from "./auth";
 
-let locales = ["fr", "nl"];
+let locales = ["fr", "en"];
 
 function getLocale(request) {
   const acceptLanguage = request.headers.get("accept-language");
@@ -35,7 +35,12 @@ export async function middleware(request) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return;
+  if (pathnameHasLocale) {
+    // Ajouter le pathname dans les headers pour le layout
+    const response = NextResponse.next();
+    response.headers.set("x-pathname", pathname);
+    return response;
+  }
 
   const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;

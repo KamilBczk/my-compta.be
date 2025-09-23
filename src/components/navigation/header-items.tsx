@@ -1,49 +1,26 @@
-import getTranslation from "@/utils/getTranslation";
+import { Dictionary } from "@/utils/useDictionary";
 
 interface HeaderItemsProps {
   lang: "fr" | "en";
+  dictionary: Dictionary;
 }
 
-export default function HeaderItems({ lang }: HeaderItemsProps) {
+export default function HeaderItems({ lang, dictionary }: HeaderItemsProps) {
   const links = [
     {
-      label: getTranslation(
-        {
-          fr: "Accueil",
-          en: "Home",
-        },
-        lang
-      ),
+      label: dictionary.navigation.home,
       href: `/${lang}`,
     },
     {
-      label: getTranslation(
-        {
-          fr: "My Compta",
-          en: "My Compta",
-        },
-        lang
-      ),
+      label: dictionary.navigation.myCompta,
       href: `/${lang}/my-compta`,
     },
     {
-      label: getTranslation(
-        {
-          fr: "Prestations",
-          en: "Prestations",
-        },
-        lang
-      ),
-      href: `/${lang}/prestations`,
+      label: dictionary.navigation.services,
+      href: `/${lang}#services`,
     },
     {
-      label: getTranslation(
-        {
-          fr: "Contact",
-          en: "Contact",
-        },
-        lang
-      ),
+      label: dictionary.navigation.contact,
       href: `/${lang}/contact`,
     },
   ];

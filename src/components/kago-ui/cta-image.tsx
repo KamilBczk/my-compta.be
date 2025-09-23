@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
+import { CircleCheck } from "lucide-react";
 
 interface CtaProps {
   reverse?: boolean;
@@ -9,6 +10,7 @@ interface CtaProps {
   button: ReactNode;
   hideButton?: boolean;
   darken?: boolean;
+  steps?: boolean;
 }
 
 export default function CtaImage({
@@ -19,6 +21,7 @@ export default function CtaImage({
   button,
   hideButton = false,
   darken = false,
+  steps = false,
 }: CtaProps) {
   return (
     <div
@@ -40,7 +43,15 @@ export default function CtaImage({
       <div className="w-full md:w-1/2 py-4 md:py-24 px-4 md:px-0">
         <div className="text-left">{title}</div>
         {content.map((elem, index) => (
-          <div key={index} className="mt-2 md:mt-4 text-left">
+          <div
+            key={index}
+            className="mt-2 md:mt-4 text-left flex items-center gap-2"
+          >
+            {steps && (
+              <span className="text-sm font-medium text-[#28DCB2]">
+                <CircleCheck />
+              </span>
+            )}
             {elem}
           </div>
         ))}

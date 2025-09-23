@@ -1,0 +1,355 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "myCompta": "My Compta",
+    "services": "Prestations",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Ensemble vers la réussite de vos projets",
+    "title": "Expert comptable à Laeken",
+    "description": "My Compta, expert comptable à Laeken, accompagne particuliers et entreprises dans leurs démarches comptables, fiscales et de création d'entreprise avec rigueur et proximité.",
+    "ctaButton": "Contactez-nous"
+  },
+  "career": {
+    "title": "Le parcours de votre expert",
+    "description": [
+      "Avec 20 ans d'expérience, votre expert vous accompagne en comptabilité, fiscalité, déclarations TVA et création d'entreprise en Belgique.",
+      "Rigueur, indépendance et confidentialité sont au cœur de ses services pour optimiser votre gestion et sécuriser vos obligations."
+    ],
+    "vision": {
+      "title": "Vision",
+      "points": [
+        "Accompagner chaque client dans la réussite de ses projets.",
+        "Transformer la comptabilité en un outil simple et utile au quotidien.",
+        "Être un partenaire de confiance pour les entrepreneurs, dirigeants et particuliers."
+      ]
+    },
+    "methods": {
+      "title": "Méthodes",
+      "points": [
+        "Privilégier l'échange et le conseil personnalisé plutôt que les solutions toutes faites.",
+        "Utiliser des outils modernes pour simplifier la gestion et gagner du temps.",
+        "Allier expérience et approche humaine pour apporter des réponses concrètes.",
+        "Accompagner les clients pas à pas, selon l'évolution de leurs besoins."
+      ]
+    },
+    "values": {
+      "title": "Valeurs",
+      "points": [
+        "Proximité : toujours à l'écoute et disponible.",
+        "Clarté : des conseils compréhensibles, sans langage compliqué.",
+        "Rigueur : un travail sérieux et fiable.",
+        "Engagement : chaque client est suivi avec attention et respect."
+      ]
+    },
+    "ctaButton": "Nos services"
+  },
+  "services": {
+    "title": "Explorez nos domaines d'expertise",
+    "description": "Nous proposons des services sur mesure pour répondre à vos besoins et vous accompagner à chaque étape de vos projets.",
+    "businessSetup": {
+      "title": "Création / liquidation entreprise",
+      "description": "Accompagnement complet pour lancer ou fermer votre société en toute sérénité."
+    },
+    "accounting": {
+      "title": "Comptabilité",
+      "description": "Gestion comptable fiable pour piloter efficacement votre activité."
+    },
+    "taxation": {
+      "title": "Fiscalité",
+      "description": "Conseils fiscaux personnalisés pour optimiser vos obligations et vos coûts."
+    },
+    "consulting": {
+      "title": "Conseil",
+      "description": "Un accompagnement stratégique pour développer votre entreprise."
+    },
+    "ctaButton": "Découvrir"
+  },
+  "competences": {
+    "title": "Nos compétences",
+    "description": [
+      "Votre conseiller fiscal veille au respect des normes, choisit le régime le plus adapté et défend vos intérêts.",
+      "Il vous accompagne dans la déclaration de vos revenus, de votre patrimoine et de vos placements, en simplifiant chaque démarche.",
+      "Grâce à son expertise, il optimise votre fiscalité en toute transparence pour préserver et valoriser votre patrimoine."
+    ],
+    "ctaButton": "Contactez-nous"
+  },
+  "footerCta": {
+    "title": "Contactez-nous dès aujourd'hui",
+    "description": "Notre équipe est à votre écoute pour répondre à vos questions et vous guider dans vos démarches.",
+    "callbackButton": "On vous rapelle",
+    "contactButton": "Contactez-nous"
+  },
+  "callback": {
+    "title": "Demande de rappel",
+    "firstName": "Prénom",
+    "phone": "Numéro de téléphone",
+    "submit": "Demander un rappel",
+    "success": "Votre demande de rappel a été envoyée avec succès !",
+    "errorRequired": "Veuillez remplir tous les champs obligatoires.",
+    "errorSubmit": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.",
+    "close": "Fermer"
+  },
+  "contact": {
+    "form": {
+      "title": "Formulaire de contact",
+      "description": "Notre équipe est à votre écoute pour répondre à vos questions et vous guider dans vos démarches.",
+      "lastName": "Nom",
+      "firstName": "Prénom",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer",
+      "submitting": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Une erreur est survenue lors de l'envoi",
+      "validation": {
+        "firstName": "Le prénom est requis",
+        "lastName": "Le nom est requis",
+        "phone": "Le téléphone est requis",
+        "email": "Email invalide",
+        "message": "Le message est requis"
+      }
+    },
+    "info": {
+      "address": {
+        "title": "Sur place",
+        "description": "Nous vous accueillons toujours avec plaisir.",
+        "content": "Rue des Genévriers 56,\n1020 Bruxelles"
+      },
+      "email": {
+        "title": "Par voie électronique",
+        "description": "Nos experts seront ravis de vous aider.",
+        "content": "info@my-compta.be"
+      },
+      "phone": {
+        "title": "Par télephone",
+        "description": "Posez toutes vos questions de vive voix !",
+        "content": "+32 (0)28 96 89 11"
+      }
+    },
+    "hours": {
+      "title": "Horaires d'ouverture",
+      "status": {
+        "open": "Ouvert",
+        "closed": "Fermé"
+      },
+      "days": {
+        "monday": "lundi",
+        "tuesday": "mardi",
+        "wednesday": "mercredi",
+        "thursday": "jeudi",
+        "friday": "vendredi",
+        "saturday": "samedi",
+        "sunday": "dimanche"
+      },
+      "schedule": {
+        "weekdays": "09:00–17:00",
+        "weekend": "Fermé"
+      }
+    }
+  },
+  "pages": {
+    "myCompta": {
+      "title": "My Compta",
+      "description": [
+        "Notre cabinet d'expertise comptable et fiscal accompagne les entrepreneurs, dirigeants et particuliers dans toutes les étapes de leur développement. Bien plus qu'un simple partenaire administratif, nous vous apportons un accompagnement clair, réactif et personnalisé, adapté à vos besoins et à vos ambitions.",
+        "Notre priorité : vous offrir un service fiable, sur mesure et accessible, pour que vous avanciez en toute sérénité."
+      ],
+      "ctaButton": "Contactez-nous",
+      "founder": {
+        "title": "La vision du fondateur",
+        "description": [
+          "Fondateur de My Compta, M. Abou Farhat est expert-comptable inscrit au tableau de l'ordre et dispose de plus de 16 ans d'expérience en comptabilité, fiscalité et gestion d'entreprise.",
+          "Rigoureux et à l'écoute, il a créé My Compta en 2020 pour offrir un accompagnement personnalisé et digitalisé aux indépendants, TPE et particuliers partout en Belgique."
+        ]
+      }
+    },
+    "accounting": {
+      "hero": {
+        "title": "Accompagnement comptable sur mesure",
+        "description": [
+          "My Compta assure la gestion complète de votre comptabilité, que vous soyez indépendant, profession libérale ou TPE. Nous vous garantissons un suivi rigoureux et conforme à vos obligations légales pour que vous puissiez vous concentrer sur le développement de votre activité.",
+          "Grâce à notre approche personnalisée, vous bénéficiez de conseils adaptés à votre situation et d'une vision claire de votre santé financière."
+        ]
+      },
+      "steps": {
+        "title": "Les étapes clés de votre comptabilité",
+        "list": [
+          "Tenue et enregistrement des opérations comptables",
+          "Déclarations périodiques (TVA, précomptes, impôts)",
+          "Préparation et dépôt des comptes annuels",
+          "Suivi de la trésorerie et des rémunérations",
+          "Analyse des résultats et optimisation fiscale"
+        ]
+      },
+      "digital": {
+        "title": "Un service digitalisé et réactif",
+        "description": [
+          "Avec My Compta, vos échanges et documents sont centralisés et sécurisés en ligne. Vous gagnez en simplicité, en rapidité et en disponibilité. Nous restons à vos côtés tout au long de l'année pour répondre à vos questions, anticiper vos échéances et optimiser votre situation.",
+          "Notre objectif : rendre votre comptabilité claire, fluide et utile à vos décisions."
+        ]
+      },
+      "ctaButton": "Contactez-nous"
+    },
+    "businessSetup": {
+      "hero": {
+        "title": "Création d'entreprise",
+        "description": [
+          "My Compta vous accompagne pas à pas dans la création de votre entreprise, depuis l'analyse de la viabilité de votre projet jusqu'aux démarches administratives. Nous vous aidons à choisir la structure juridique adaptée, à construire un business plan solide et à lancer votre activité sur des bases claires, sécurisées et durables."
+        ]
+      },
+      "steps": {
+        "title": "Étapes clés de la création d'entreprise",
+        "list": [
+          "Analyse de la viabilité du projet",
+          "Choix de la structure juridique et fiscale",
+          "Rédaction des statuts",
+          "Immatriculation et démarches administratives",
+          "Mise en place de la comptabilité"
+        ]
+      },
+      "support": {
+        "title": "Un accompagnement personnalisé",
+        "description": [
+          "Au-delà des formalités, nous vous conseillons sur la stratégie fiscale, les aides disponibles et les obligations à respecter. Nous préparons également la mise en route de votre comptabilité pour un démarrage serein et conforme.",
+          "Notre expertise vous évite les pièges et vous fait gagner du temps pour vous concentrer sur l'essentiel : le développement de votre projet."
+        ]
+      },
+      "liquidation": {
+        "title": "Liquidation d'entreprise",
+        "description": [
+          "En cas de cessation volontaire ou de faillite, My Compta vous guide dans toutes les étapes de la liquidation de votre entreprise. De la clôture des comptes à la rédaction des documents légaux, nous assurons un accompagnement rigoureux et sécurisé pour vous permettre de tourner cette page en toute sérénité et en conformité avec vos obligations."
+        ]
+      },
+      "ctaButton": "Contactez-nous"
+    },
+    "taxation": {
+      "hero": {
+        "title": "Optimisation fiscale",
+        "description": [
+          "My Compta vous aide à maîtriser votre fiscalité en adaptant votre situation aux lois en vigueur tout en optimisant vos revenus. Que vous soyez indépendant, dirigeant de TPE ou particulier, nous analysons votre situation afin de réduire légalement votre charge fiscale et de sécuriser vos décisions patrimoniales.",
+          "Notre objectif : transformer la fiscalité en levier de croissance et non en contrainte."
+        ]
+      },
+      "steps": {
+        "title": "Les étapes clés de votre suivi fiscal",
+        "list": [
+          "Préparer et déposer vos déclarations fiscales (personnes physiques et sociétés)",
+          "Mettre en place une planification et une optimisation fiscale adaptées",
+          "Réaliser un bilan patrimonial et proposer des solutions d'investissement",
+          "Gérer les contrôles fiscaux et assurer le suivi administratif",
+          "Adapter votre fiscalité aux évolutions légales et à vos objectifs"
+        ]
+      },
+      "anticipation": {
+        "title": "Anticipation et sérénité",
+        "description": [
+          "La fiscalité est en constante évolution ; c'est pourquoi nous assurons une veille permanente pour anticiper les changements et ajuster vos stratégies. Grâce à notre expertise et notre pédagogie, vous gardez le contrôle sur votre situation et pouvez prendre des décisions éclairées, en toute sérénité."
+        ]
+      },
+      "ctaButton": "Contactez-nous"
+    },
+    "consulting": {
+      "hero": {
+        "title": "Conseil en gestion et accompagnement stratégique",
+        "description": [
+          "My Compta vous accompagne bien au-delà des chiffres, en vous apportant un regard extérieur et objectif sur la gestion de votre activité. Nous vous aidons à prendre les bonnes décisions pour structurer, développer et pérenniser votre entreprise, en tenant compte de vos contraintes et de vos ambitions. Notre approche personnalisée vous permet d'avoir une vision claire et réaliste de votre entreprise à chaque étape de son évolution."
+        ]
+      },
+      "steps": {
+        "title": "Les étapes clés de notre accompagnement",
+        "list": [
+          "Analyse de la rentabilité et des performances financières",
+          "Élaboration de budgets prévisionnels et plans de trésorerie",
+          "Mise en place d'outils de suivi et d'indicateurs de gestion",
+          "Aide à la prise de décision stratégique et à la recherche de financements",
+          "Suivi régulier et ajustement des objectifs"
+        ]
+      },
+      "partnership": {
+        "title": "Un partenaire de confiance et de proximité",
+        "description": [
+          "Avec My Compta, vous bénéficiez d'un interlocuteur réactif, disponible et à l'écoute. Nous travaillons dans un esprit de partenariat durable, en anticipant vos besoins et en vous conseillant de manière proactive.",
+          "Notre mission : vous aider à piloter votre entreprise en toute confiance, avec des décisions éclairées et sécurisées."
+        ]
+      },
+      "ctaButton": "Contactez-nous"
+    }
+  },
+  "seo": {
+    "default": {
+      "title": "My Compta - Expert Comptable | Comptabilité & Fiscalité Bruxelles",
+      "description": "Expert comptable en région bruxelloise. My Compta accompagne particuliers et entreprises en comptabilité, fiscalité, création d'entreprise. Service personnalisé et digitalisé.",
+      "keywords": "expert comptable, comptabilité, fiscalité, création entreprise, Bruxelles, TPE, indépendant"
+    },
+    "home": {
+      "title": "My Compta - Expert Comptable à Laeken | Ensemble vers la réussite",
+      "description": "Expert comptable à Laeken, My Compta accompagne particuliers et entreprises dans leurs démarches comptables, fiscales et de création d'entreprise avec rigueur et proximité.",
+      "keywords": "expert comptable Laeken, comptabilité Bruxelles, fiscalité entreprise, création société"
+    },
+    "myCompta": {
+      "title": "À propos de My Compta - Cabinet d'expertise comptable",
+      "description": "Découvrez My Compta, cabinet d'expertise comptable et fiscal qui accompagne entrepreneurs, dirigeants et particuliers avec un service personnalisé depuis 2020.",
+      "keywords": "cabinet expertise comptable, My Compta, Abou Farhat, expert comptable"
+    },
+    "contact": {
+      "title": "Contact My Compta - Expert Comptable | Devis gratuit",
+      "description": "Contactez My Compta pour vos besoins en comptabilité et fiscalité. Devis gratuit, réponse rapide. Service professionnel et personnalisé.",
+      "keywords": "contact expert comptable, devis comptabilité, conseil fiscal, Bruxelles"
+    },
+    "services": {
+      "accounting": {
+        "title": "Comptabilité sur mesure | My Compta - Expert Comptable",
+        "description": "Gestion comptable complète pour indépendants, professions libérales et TPE. Suivi rigoureux, conseils personnalisés et optimisation fiscale.",
+        "keywords": "comptabilité indépendant, gestion comptable TPE, déclarations TVA, comptes annuels"
+      },
+      "businessSetup": {
+        "title": "Création d'entreprise | My Compta - Accompagnement complet",
+        "description": "Accompagnement pas à pas dans la création de votre entreprise. Choix structure juridique, business plan, démarches administratives.",
+        "keywords": "création entreprise, business plan, structure juridique, immatriculation société"
+      },
+      "taxation": {
+        "title": "Optimisation fiscale | My Compta - Conseils fiscaux personnalisés",
+        "description": "Optimisation fiscale pour particuliers et entreprises. Réduction légale de la charge fiscale, planification patrimoniale et suivi des obligations.",
+        "keywords": "optimisation fiscale, conseil fiscal, déclaration impôts, planification patrimoniale"
+      },
+      "consulting": {
+        "title": "Conseil en gestion | My Compta - Accompagnement stratégique",
+        "description": "Conseil en gestion et accompagnement stratégique. Analyse financière, budgets prévisionnels, indicateurs de gestion et aide à la décision.",
+        "keywords": "conseil gestion, analyse financière, budget prévisionnel, indicateurs gestion"
+      }
+    }
+  },
+  "footer": {
+    "companyNumber": "N° d'entreprise BE0746.708.869",
+    "address": {
+      "title": "Notre adresse",
+      "street": "Rue des Genévriers 56",
+      "city": "1020 Bruxelles"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "info@my-compta.be",
+      "phone": "028 96 89 11"
+    },
+    "certification": {
+      "title": "Membre ITAA",
+      "organization": "Institute for Tax Advisors and Accountants",
+      "number": "N° 50.63.60.20"
+    },
+    "links": {
+      "title": "Liens utiles",
+      "sitemap": "Plan du site",
+      "legal": "Mentions légales",
+      "privacy": "Politique de confidentialité"
+    },
+    "credits": {
+      "madeBy": "Réalisé par:",
+      "company": "Kago Group",
+      "copyright": "© 2025. My Compta. All rights reserved."
+    }
+  }
+}

@@ -6,6 +6,8 @@ type ButtonProps = {
   href?: string;
   type?: "button" | "submit" | "reset";
   className?: string;
+  onClick?: () => void;
+  disabled?: boolean;
 };
 
 export default function Button({
@@ -14,6 +16,8 @@ export default function Button({
   href,
   type,
   className = "",
+  onClick,
+  disabled = false,
 }: ButtonProps) {
   const baseClasses =
     "inline-block px-8 py-3 rounded-md transition-all duration-300 ease-in-out";
@@ -24,11 +28,16 @@ export default function Button({
     border:
       "border-2 border-[#025EAC] text-[#025EAC] bg-transparent hover:bg-[#025EAC] hover:text-white",
   };
-  if (type === "submit") {
+
+  const disabledClasses = disabled ? "opacity-50 cursor-not-allowed" : "";
+
+  if (type === "submit" || type === "button" || onClick) {
     return (
       <button
-        type={type}
-        className={`${baseClasses} ${variantClasses[variant]} ${className}`}
+        type={type || "button"}
+        onClick={onClick}
+        disabled={disabled}
+        className={`${baseClasses} ${variantClasses[variant]} ${disabledClasses} ${className} cursor-pointer`}
       >
         {children}
       </button>

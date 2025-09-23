@@ -1,0 +1,355 @@
+{
+  "navigation": {
+    "home": "Home",
+    "myCompta": "My Compta",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Together towards the success of your projects",
+    "title": "Chartered Accountant in Laeken",
+    "description": "My Compta, chartered accountant in Laeken, supports individuals and businesses in their accounting, tax and business creation processes with rigor and proximity.",
+    "ctaButton": "Contact us"
+  },
+  "career": {
+    "title": "Your expert's journey",
+    "description": [
+      "With 20 years of experience, your expert supports you in accounting, taxation, VAT declarations and business creation in Belgium.",
+      "Rigor, independence and confidentiality are at the heart of our services to optimize your management and secure your obligations."
+    ],
+    "vision": {
+      "title": "Vision",
+      "points": [
+        "Support each client in the success of their projects.",
+        "Transform accounting into a simple and useful daily tool.",
+        "Be a trusted partner for entrepreneurs, managers and individuals."
+      ]
+    },
+    "methods": {
+      "title": "Methods",
+      "points": [
+        "Favor exchange and personalized advice rather than one-size-fits-all solutions.",
+        "Use modern tools to simplify management and save time.",
+        "Combine experience and human approach to provide concrete answers.",
+        "Support clients step by step, according to the evolution of their needs."
+      ]
+    },
+    "values": {
+      "title": "Values",
+      "points": [
+        "Proximity: always listening and available.",
+        "Clarity: understandable advice, without complicated language.",
+        "Rigor: serious and reliable work.",
+        "Commitment: each client is followed with attention and respect."
+      ]
+    },
+    "ctaButton": "Our services"
+  },
+  "services": {
+    "title": "Explore our areas of expertise",
+    "description": "We offer tailor-made services to meet your needs and support you at every stage of your projects.",
+    "businessSetup": {
+      "title": "Business creation / liquidation",
+      "description": "Complete support to launch or close your company with peace of mind."
+    },
+    "accounting": {
+      "title": "Accounting",
+      "description": "Reliable accounting management to effectively manage your activity."
+    },
+    "taxation": {
+      "title": "Taxation",
+      "description": "Personalized tax advice to optimize your obligations and costs."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "Strategic support to develop your business."
+    },
+    "ctaButton": "Discover"
+  },
+  "competences": {
+    "title": "Our skills",
+    "description": [
+      "Your tax advisor ensures compliance with standards, chooses the most suitable regime and defends your interests.",
+      "He accompanies you in declaring your income, assets and investments, simplifying each step.",
+      "Thanks to his expertise, he optimizes your taxation with complete transparency to preserve and enhance your assets."
+    ],
+    "ctaButton": "Contact us"
+  },
+  "footerCta": {
+    "title": "Contact us today",
+    "description": "Our team is at your disposal to answer your questions and guide you in your steps.",
+    "callbackButton": "We call you back",
+    "contactButton": "Contact us"
+  },
+  "callback": {
+    "title": "Callback Request",
+    "firstName": "First Name",
+    "phone": "Phone Number",
+    "submit": "Request Callback",
+    "success": "Your callback request has been sent successfully!",
+    "errorRequired": "Please fill in all required fields.",
+    "errorSubmit": "An error occurred while sending. Please try again.",
+    "close": "Close"
+  },
+  "contact": {
+    "form": {
+      "title": "Contact Form",
+      "description": "Our team is at your disposal to answer your questions and guide you in your steps.",
+      "lastName": "Last Name",
+      "firstName": "First Name",
+      "phone": "Phone",
+      "company": "Company",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An error occurred while sending",
+      "validation": {
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "phone": "Phone is required",
+        "email": "Invalid email",
+        "message": "Message is required"
+      }
+    },
+    "info": {
+      "address": {
+        "title": "On site",
+        "description": "We always welcome you with pleasure.",
+        "content": "Rue des Genévriers 56,\n1020 Brussels"
+      },
+      "email": {
+        "title": "Electronically",
+        "description": "Our experts will be happy to help you.",
+        "content": "info@my-compta.be"
+      },
+      "phone": {
+        "title": "By phone",
+        "description": "Ask all your questions live!",
+        "content": "+32 (0)28 96 89 11"
+      }
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "status": {
+        "open": "Open",
+        "closed": "Closed"
+      },
+      "days": {
+        "monday": "monday",
+        "tuesday": "tuesday",
+        "wednesday": "wednesday",
+        "thursday": "thursday",
+        "friday": "friday",
+        "saturday": "saturday",
+        "sunday": "sunday"
+      },
+      "schedule": {
+        "weekdays": "09:00–17:00",
+        "weekend": "Closed"
+      }
+    }
+  },
+  "pages": {
+    "myCompta": {
+      "title": "My Compta",
+      "description": [
+        "Our accounting and tax expertise firm supports entrepreneurs, managers and individuals in all stages of their development. Much more than a simple administrative partner, we provide you with clear, responsive and personalized support, adapted to your needs and ambitions.",
+        "Our priority: to offer you a reliable, tailor-made and accessible service, so that you can move forward with complete peace of mind."
+      ],
+      "ctaButton": "Contact us",
+      "founder": {
+        "title": "The founder's vision",
+        "description": [
+          "Founder of My Compta, Mr. Abou Farhat is a chartered accountant registered with the professional body and has more than 16 years of experience in accounting, taxation and business management.",
+          "Rigorous and attentive, he created My Compta in 2020 to offer personalized and digitalized support to self-employed, small businesses and individuals throughout Belgium."
+        ]
+      }
+    },
+    "accounting": {
+      "hero": {
+        "title": "Tailor-made accounting support",
+        "description": [
+          "My Compta ensures complete management of your accounting, whether you are self-employed, a liberal profession or a small business. We guarantee rigorous monitoring in compliance with your legal obligations so that you can focus on developing your activity.",
+          "Thanks to our personalized approach, you benefit from advice adapted to your situation and a clear vision of your financial health."
+        ]
+      },
+      "steps": {
+        "title": "The key stages of your accounting",
+        "list": [
+          "Keeping and recording accounting operations",
+          "Periodic declarations (VAT, withholding taxes, taxes)",
+          "Preparation and filing of annual accounts",
+          "Monitoring of cash flow and remuneration",
+          "Analysis of results and tax optimization"
+        ]
+      },
+      "digital": {
+        "title": "A digitalized and responsive service",
+        "description": [
+          "With My Compta, your exchanges and documents are centralized and secured online. You gain in simplicity, speed and availability. We remain by your side throughout the year to answer your questions, anticipate your deadlines and optimize your situation.",
+          "Our objective: to make your accounting clear, fluid and useful for your decisions."
+        ]
+      },
+      "ctaButton": "Contact us"
+    },
+    "businessSetup": {
+      "hero": {
+        "title": "Business creation",
+        "description": [
+          "My Compta supports you step by step in creating your business, from analyzing the viability of your project to administrative procedures. We help you choose the appropriate legal structure, build a solid business plan and launch your activity on clear, secure and sustainable foundations."
+        ]
+      },
+      "steps": {
+        "title": "Key stages of business creation",
+        "list": [
+          "Analysis of project viability",
+          "Choice of legal and tax structure",
+          "Drafting of articles of incorporation",
+          "Registration and administrative procedures",
+          "Setting up accounting"
+        ]
+      },
+      "support": {
+        "title": "Personalized support",
+        "description": [
+          "Beyond formalities, we advise you on tax strategy, available aid and obligations to be respected. We also prepare the start-up of your accounting for a serene and compliant start.",
+          "Our expertise helps you avoid pitfalls and saves you time to focus on the essential: developing your project."
+        ]
+      },
+      "liquidation": {
+        "title": "Business liquidation",
+        "description": [
+          "In case of voluntary cessation or bankruptcy, My Compta guides you through all the stages of liquidating your business. From closing accounts to drafting legal documents, we provide rigorous and secure support to allow you to turn this page with complete peace of mind and in compliance with your obligations."
+        ]
+      },
+      "ctaButton": "Contact us"
+    },
+    "taxation": {
+      "hero": {
+        "title": "Tax optimization",
+        "description": [
+          "My Compta helps you master your taxation by adapting your situation to current laws while optimizing your income. Whether you are self-employed, manager of a small business or individual, we analyze your situation to legally reduce your tax burden and secure your asset decisions.",
+          "Our objective: to transform taxation into a growth lever and not a constraint."
+        ]
+      },
+      "steps": {
+        "title": "The key stages of your tax monitoring",
+        "list": [
+          "Prepare and file your tax returns (individuals and companies)",
+          "Implement appropriate tax planning and optimization",
+          "Carry out an asset assessment and propose investment solutions",
+          "Manage tax audits and ensure administrative follow-up",
+          "Adapt your taxation to legal developments and your objectives"
+        ]
+      },
+      "anticipation": {
+        "title": "Anticipation and serenity",
+        "description": [
+          "Taxation is constantly evolving; this is why we ensure permanent monitoring to anticipate changes and adjust your strategies. Thanks to our expertise and pedagogy, you keep control over your situation and can make informed decisions, with complete peace of mind."
+        ]
+      },
+      "ctaButton": "Contact us"
+    },
+    "consulting": {
+      "hero": {
+        "title": "Management consulting and strategic support",
+        "description": [
+          "My Compta supports you well beyond the numbers, by providing you with an external and objective view of the management of your activity. We help you make the right decisions to structure, develop and sustain your business, taking into account your constraints and ambitions. Our personalized approach allows you to have a clear and realistic vision of your business at each stage of its evolution."
+        ]
+      },
+      "steps": {
+        "title": "The key stages of our support",
+        "list": [
+          "Analysis of profitability and financial performance",
+          "Development of forecast budgets and cash flow plans",
+          "Implementation of monitoring tools and management indicators",
+          "Assistance with strategic decision-making and financing research",
+          "Regular monitoring and adjustment of objectives"
+        ]
+      },
+      "partnership": {
+        "title": "A trusted and close partner",
+        "description": [
+          "With My Compta, you benefit from a responsive, available and attentive interlocutor. We work in a spirit of lasting partnership, anticipating your needs and advising you proactively.",
+          "Our mission: to help you manage your business with confidence, with informed and secure decisions."
+        ]
+      },
+      "ctaButton": "Contact us"
+    }
+  },
+  "seo": {
+    "default": {
+      "title": "My Compta - Chartered Accountant | Accounting & Tax Services Brussels",
+      "description": "Chartered accountant in Brussels region. My Compta supports individuals and businesses with accounting, taxation, and business creation. Personalized and digitalized service.",
+      "keywords": "chartered accountant, accounting, taxation, business creation, Brussels, SME, self-employed"
+    },
+    "home": {
+      "title": "My Compta - Chartered Accountant in Laeken | Together towards success",
+      "description": "Chartered accountant in Laeken, My Compta supports individuals and businesses in their accounting, tax and business creation processes with rigor and proximity.",
+      "keywords": "chartered accountant Laeken, accounting Brussels, business taxation, company creation"
+    },
+    "myCompta": {
+      "title": "About My Compta - Accounting and Tax Expertise Firm",
+      "description": "Discover My Compta, accounting and tax expertise firm that supports entrepreneurs, managers and individuals with personalized service since 2020.",
+      "keywords": "accounting expertise firm, My Compta, Abou Farhat, chartered accountant"
+    },
+    "contact": {
+      "title": "Contact My Compta - Chartered Accountant | Free Quote",
+      "description": "Contact My Compta for your accounting and taxation needs. Free quote, quick response. Professional and personalized service.",
+      "keywords": "contact chartered accountant, accounting quote, tax advice, Brussels"
+    },
+    "services": {
+      "accounting": {
+        "title": "Tailor-made Accounting | My Compta - Chartered Accountant",
+        "description": "Complete accounting management for self-employed, liberal professions and SMEs. Rigorous monitoring, personalized advice and tax optimization.",
+        "keywords": "self-employed accounting, SME accounting management, VAT declarations, annual accounts"
+      },
+      "businessSetup": {
+        "title": "Business Creation | My Compta - Complete Support",
+        "description": "Step-by-step support in creating your business. Choice of legal structure, business plan, administrative procedures.",
+        "keywords": "business creation, business plan, legal structure, company registration"
+      },
+      "taxation": {
+        "title": "Tax Optimization | My Compta - Personalized Tax Advice",
+        "description": "Tax optimization for individuals and businesses. Legal reduction of tax burden, wealth planning and compliance monitoring.",
+        "keywords": "tax optimization, tax advice, tax returns, wealth planning"
+      },
+      "consulting": {
+        "title": "Management Consulting | My Compta - Strategic Support",
+        "description": "Management consulting and strategic support. Financial analysis, forecast budgets, management indicators and decision support.",
+        "keywords": "management consulting, financial analysis, forecast budget, management indicators"
+      }
+    }
+  },
+  "footer": {
+    "companyNumber": "Company number BE0746.708.869",
+    "address": {
+      "title": "Our address",
+      "street": "Rue des Genévriers 56",
+      "city": "1020 Brussels"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "info@my-compta.be",
+      "phone": "028 96 89 11"
+    },
+    "certification": {
+      "title": "ITAA Member",
+      "organization": "Institute for Tax Advisors and Accountants",
+      "number": "No. 50.63.60.20"
+    },
+    "links": {
+      "title": "Useful links",
+      "sitemap": "Site map",
+      "legal": "Legal notice",
+      "privacy": "Privacy policy"
+    },
+    "credits": {
+      "madeBy": "Made by:",
+      "company": "Kago Group",
+      "copyright": "© 2025. My Compta. All rights reserved."
+    }
+  }
+}

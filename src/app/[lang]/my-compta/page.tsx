@@ -6,49 +6,65 @@ import Separator from "@/components/separator";
 import Competences from "@/components/sections/competences";
 import Services from "@/components/sections/services";
 import getImages from "@/utils/getImages";
+import { getDictionary } from "@/dictionaries/getDictionary";
+import { generateMetadata as generateSEOMetadata } from "@/utils/generateMetadata";
 import React from "react";
 
-export default function page() {
-  const { backgroundHero } = getImages();
+interface PageProps {
+  params: Promise<{
+    lang: string;
+  }>;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  return generateSEOMetadata({ lang: lang as "fr" | "en", page: "myCompta" });
+}
+
+export default async function page({ params }: PageProps) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang as "fr" | "en");
+  const { founder, myCompta } = getImages();
   return (
     <div>
       <Section>
         <Container>
           <CtaImage
             title={
-              <h3 className="text-3xl font-medium text-[#0F2137]">My Compta</h3>
+              <h3 className="text-3xl font-medium text-[#0F2137]">
+                {dictionary.pages.myCompta.title}
+              </h3>
             }
-            image={backgroundHero}
-            content={[
-              "My Compta est un cabinet comptable et fiscal situé à Bruxelles, fondé en 2020 par M. Abou Farhat, expert-comptable inscrit au tableau de l’ordre. Fort de plus de 16 années d’expérience en comptabilité, fiscalité et conseil en gestion d’entreprise, il met ses compétences au service des indépendants, professions libérales, TPE et particuliers dans toute la Belgique, notamment à Laeken, Anderlecht et Jette.",
-            ]}
+            image={myCompta}
+            content={dictionary.pages.myCompta.description}
             button={
-              <Button variant="gradient" href="/contact">
-                Contactez-nous
+              <Button variant="gradient" href={`/${lang}/contact`}>
+                {dictionary.pages.myCompta.ctaButton}
               </Button>
             }
           />
         </Container>
       </Section>
-      <Competences reverse />
-      <Services />
+      <Competences lang={lang as "fr" | "en"} reverse dictionary={dictionary} />
+      <Services lang={lang as "fr" | "en"} dictionary={dictionary} />
       <Section color="gray">
         <Container>
           <>
             <CtaImage
               title={
                 <h3 className="text-3xl font-medium text-[#0F2137]">
-                  La vision du fondateur
+                  {dictionary.pages.myCompta.founder.title}
                 </h3>
               }
-              image={backgroundHero}
-              content={[
-                "Fondateur de My Compta, M. Abou Farhat est expert-comptable inscrit au tableau de l’ordre et dispose de plus de 16 ans d’expérience en comptabilité, fiscalité et gestion d’entreprise.",
-                "Rigoureux et à l’écoute, il a créé My Compta en 2020 pour offrir un accompagnement personnalisé et digitalisé aux indépendants, TPE et particuliers partout en Belgique.",
-              ]}
+              image={founder}
+              content={dictionary.pages.myCompta.founder.description}
               button={
-                <Button variant="gradient" href="/contact">
-                  Contactez-nous
+                <Button variant="gradient" href={`/${lang}/contact`}>
+                  {dictionary.pages.myCompta.ctaButton}
                 </Button>
               }
             />

@@ -22,14 +22,14 @@ export async function generateMetadata({
   const { lang } = await params;
   return generateSEOMetadata({
     lang: lang as "fr" | "en",
-    service: "businessSetup",
+    service: "consulting",
   });
 }
 
 export default async function page({ params }: PageProps) {
   const { lang } = await params;
   const dictionary = await getDictionary(lang as "fr" | "en");
-  const { businessSetup, businessSetupSteps, liquidation } = getImages();
+  const { consulting, steps, consultingPartnership } = getImages();
   return (
     <div>
       <Section>
@@ -37,14 +37,14 @@ export default async function page({ params }: PageProps) {
           <CtaImage
             title={
               <h3 className="text-3xl font-medium text-[#0F2137]">
-                {dictionary.pages.businessSetup.hero.title}
+                {dictionary.pages.consulting.hero.title}
               </h3>
             }
-            image={businessSetup}
-            content={dictionary.pages.businessSetup.hero.description}
+            image={consulting}
+            content={dictionary.pages.consulting.hero.description}
             button={
               <Button variant="gradient" href={`/${lang}/contact`}>
-                {dictionary.pages.businessSetup.ctaButton}
+                {dictionary.pages.consulting.ctaButton}
               </Button>
             }
             reverse
@@ -56,14 +56,14 @@ export default async function page({ params }: PageProps) {
           <CtaImage
             title={
               <h3 className="text-3xl font-medium text-[#0F2137]">
-                {dictionary.pages.businessSetup.steps.title}
+                {dictionary.pages.consulting.steps.title}
               </h3>
             }
-            image={businessSetupSteps}
-            content={dictionary.pages.businessSetup.steps.list}
+            image={steps}
+            content={dictionary.pages.consulting.steps.list}
             button={
               <Button variant="gradient" href={`/${lang}/contact`}>
-                {dictionary.pages.businessSetup.ctaButton}
+                {dictionary.pages.consulting.ctaButton}
               </Button>
             }
             steps
@@ -76,14 +76,14 @@ export default async function page({ params }: PageProps) {
           <CtaImage
             title={
               <h3 className="text-3xl font-medium text-[#0F2137]">
-                {dictionary.pages.businessSetup.liquidation.title}
+                {dictionary.pages.consulting.partnership.title}
               </h3>
             }
-            image={liquidation}
-            content={dictionary.pages.businessSetup.liquidation.description}
+            image={consultingPartnership}
+            content={dictionary.pages.consulting.partnership.description}
             button={
               <Button variant="gradient" href={`/${lang}/contact`}>
-                {dictionary.pages.businessSetup.ctaButton}
+                {dictionary.pages.consulting.ctaButton}
               </Button>
             }
             reverse

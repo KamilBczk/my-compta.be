@@ -5,8 +5,13 @@ import Separator from "@/components/separator";
 import { Sparkles, Zap, Gem } from "lucide-react";
 import CtaImages from "@/components/kago-ui/cta-images";
 import Button from "@/components/kago-ui/button";
+import { Dictionary } from "@/utils/useDictionary";
 
-export default function Career() {
+interface CareerProps {
+  dictionary: Dictionary;
+}
+
+export default function Career({ dictionary }: CareerProps) {
   return (
     <div>
       <Section color="gray">
@@ -15,7 +20,7 @@ export default function Career() {
             <CtaImages
               title={
                 <h3 className="text-3xl font-medium text-[#0F2137]">
-                  Le parcours de votre expert
+                  {dictionary.career.title}
                 </h3>
               }
               items={[
@@ -23,50 +28,33 @@ export default function Career() {
                   icon: (
                     <Sparkles size={48} className="text-[#28D1DC] size-28" />
                   ),
-                  text: "Vision",
+                  text: dictionary.career.vision.title,
                   description: {
-                    title: "Vision",
-                    points: [
-                      "Accompagner chaque client dans la réussite de ses projets.",
-                      "Transformer la comptabilité en un outil simple et utile au quotidien.",
-                      "Être un partenaire de confiance pour les entrepreneurs, dirigeants et particuliers.",
-                    ],
+                    title: dictionary.career.vision.title,
+                    points: dictionary.career.vision.points,
                   },
                 },
                 {
                   icon: <Zap size={48} className="text-[#FA578E] size-28" />,
-                  text: "Méthodes",
+                  text: dictionary.career.methods.title,
                   description: {
-                    title: "Méthodes",
-                    points: [
-                      "Privilégier l'échange et le conseil personnalisé plutôt que les solutions toutes faites.",
-                      "Utiliser des outils modernes pour simplifier la gestion et gagner du temps.",
-                      "Allier expérience et approche humaine pour apporter des réponses concrètes.",
-                      "Accompagner les clients pas à pas, selon l'évolution de leurs besoins.",
-                    ],
+                    title: dictionary.career.methods.title,
+                    points: dictionary.career.methods.points,
                   },
                 },
                 {
                   icon: <Gem size={48} className="text-[#28DCB2] size-28" />,
-                  text: "Valeurs",
+                  text: dictionary.career.values.title,
                   description: {
-                    title: "Valeurs",
-                    points: [
-                      "Proximité : toujours à l'écoute et disponible.",
-                      "Clarté : des conseils compréhensibles, sans langage compliqué.",
-                      "Rigueur : un travail sérieux et fiable.",
-                      "Engagement : chaque client est suivi avec attention et respect.",
-                    ],
+                    title: dictionary.career.values.title,
+                    points: dictionary.career.values.points,
                   },
                 },
               ]}
-              content={[
-                "Avec 16 ans d'expérience, votre expert vous accompagne en comptabilité, fiscalité, déclarations TVA et création d'entreprise à Bruxelles.",
-                "Rigueur, indépendance et confidentialité sont au cœur de ses services pour optimiser votre gestion et sécuriser vos obligations.",
-              ]}
+              content={dictionary.career.description}
               button={
-                <Button variant="gradient" href="/contact">
-                  Contactez-nous
+                <Button variant="gradient" href="#services">
+                  {dictionary.career.ctaButton}
                 </Button>
               }
             />

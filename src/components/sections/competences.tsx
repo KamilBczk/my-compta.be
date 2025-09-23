@@ -5,13 +5,20 @@ import CtaImage from "../kago-ui/cta-image";
 import Button from "../kago-ui/button";
 import getImages from "@/utils/getImages";
 import Separator from "../separator";
+import { Dictionary } from "@/utils/useDictionary";
 
 interface CompetencesProps {
   reverse?: boolean;
+  lang?: "fr" | "en";
+  dictionary: Dictionary;
 }
 
-export default function Competences({ reverse = false }: CompetencesProps) {
-  const { backgroundHero } = getImages();
+export default function Competences({
+  reverse = false,
+  lang,
+  dictionary,
+}: CompetencesProps) {
+  const { competences } = getImages();
 
   return (
     <div id="kago-ui-competences">
@@ -22,18 +29,14 @@ export default function Competences({ reverse = false }: CompetencesProps) {
               reverse={reverse}
               title={
                 <h3 className="text-3xl font-medium text-[#0F2137]">
-                  Nos compétences
+                  {dictionary.competences.title}
                 </h3>
               }
-              image={backgroundHero}
-              content={[
-                "Votre conseiller fiscal veille au respect des normes, choisit le régime le plus adapté et défend vos intérêts.",
-                "Il vous accompagne dans la déclaration de vos revenus, de votre patrimoine et de vos placements, en simplifiant chaque démarche.",
-                "Grâce à son expertise, il optimise votre fiscalité en toute transparence pour préserver et valoriser votre patrimoine.",
-              ]}
+              image={competences}
+              content={dictionary.competences.description}
               button={
-                <Button variant="gradient" href="/contact">
-                  Découvrir
+                <Button variant="gradient" href={`/${lang}/contact`}>
+                  {dictionary.competences.ctaButton}
                 </Button>
               }
             />
