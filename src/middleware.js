@@ -25,6 +25,16 @@ export async function middleware(request) {
   // const authResult = await auth(request);
   // if (authResult) return authResult;
 
+  // Redirection HTTPS en production
+  if (
+    process.env.NODE_ENV === "production" &&
+    request.headers.get("x-forwarded-proto") === "http"
+  ) {
+    const httpsUrl = new URL(request.url);
+    httpsUrl.protocol = "https:";
+    return NextResponse.redirect(httpsUrl, 301);
+  }
+
   // Logique de localisation
   const { pathname } = request.nextUrl;
 
