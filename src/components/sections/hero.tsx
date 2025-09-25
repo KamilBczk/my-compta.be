@@ -20,10 +20,10 @@ export default function Hero({ lang, dictionary, office }: HeroProps) {
   let description = dictionary.hero.description;
 
   if (office) {
-    // Remplacer "Laeken" par la ville du bureau
+    // Remplacer "Laeken" par la ville du bureau dans le titre
     title = title.replace(/Laeken/gi, office.name[lang]);
-    // Utiliser la description spécifique du bureau
-    description = office.description[lang];
+    // Remplacer "Laeken" par la ville du bureau dans la description aussi
+    description = description.replace(/Laeken/gi, office.name[lang]);
   }
 
   return (

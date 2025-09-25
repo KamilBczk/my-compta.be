@@ -141,7 +141,7 @@ export function generateStructuredData(lang: "fr" | "en", office?: Office) {
     url: office ? `${baseUrl}/${lang}/office/${office.slug}` : `${baseUrl}/${lang}`,
     logo: `${baseUrl}/logo.png`,
     image: `${baseUrl}/og-image.jpg`,
-    telephone: "+32 28 96 89 11",
+    telephone: "+32 496 80 47 52",
     email: "info@my-compta.be",
     address: {
       "@type": "PostalAddress",

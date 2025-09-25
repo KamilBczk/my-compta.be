@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Redirection HTTPS automatique
+  // Redirection HTTPS automatique (uniquement pour le domaine de production)
   async redirects() {
     return [
       // Redirection HTTP vers HTTPS en production
@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
             type: 'header',
             key: 'x-forwarded-proto',
             value: 'http',
+          },
+          {
+            type: 'header',
+            key: 'host',
+            value: 'my-compta.be',
           },
         ],
         destination: 'https://my-compta.be/:path*',

@@ -127,7 +127,7 @@
       "phone": {
         "title": "Par télephone",
         "description": "Posez toutes vos questions de vive voix !",
-        "content": "+32 (0)28 96 89 11"
+        "content": "+32 496 80 47 52"
       }
     },
     "hours": {
@@ -162,7 +162,7 @@
       "founder": {
         "title": "La vision du fondateur",
         "description": [
-          "Fondateur de My Compta, M. Abou Farhat est expert-comptable inscrit au tableau de l'ordre et dispose de plus de 16 ans d'expérience en comptabilité, fiscalité et gestion d'entreprise.",
+          "Avec plus de 20 ans d’expérience en tant qu’expert-comptable, notre fondateur dispose d'une expérience en comptabilité, fiscalité et gestion d'entreprise.",
           "Rigoureux et à l'écoute, il a créé My Compta en 2020 pour offrir un accompagnement personnalisé et digitalisé aux indépendants, PME et particuliers partout en Belgique."
         ]
       }
@@ -333,7 +333,7 @@
     "contact": {
       "title": "Contact",
       "email": "info@my-compta.be",
-      "phone": "028 96 89 11"
+      "phone": "+32 496 80 47 52"
     },
     "certification": {
       "title": "Membre ITAA",

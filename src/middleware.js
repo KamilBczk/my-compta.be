@@ -25,11 +25,14 @@ export async function middleware(request) {
   // const authResult = await auth(request);
   // if (authResult) return authResult;
 
-  // Redirection HTTPS en production
-  if (
-    process.env.NODE_ENV === "production" &&
-    request.headers.get("x-forwarded-proto") === "http"
-  ) {
+  // Redirection HTTPS uniquement en production et sur le domaine de production
+  const isProduction = process.env.NODE_ENV === "production";
+  const isHttpRequest = request.headers.get("x-forwarded-proto") === "http";
+  const isProductionDomain =
+    request.nextUrl.hostname === "my-compta.be" ||
+    request.nextUrl.hostname === "www.my-compta.be";
+
+  if (isProduction && isHttpRequest && isProductionDomain) {
     const httpsUrl = new URL(request.url);
     httpsUrl.protocol = "https:";
     return NextResponse.redirect(httpsUrl, 301);

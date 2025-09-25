@@ -43,7 +43,7 @@ export default function Footer({ dictionary }: FooterProps) {
       },
       {
         label: dictionary.footer.contact.phone,
-        href: "tel:+3228968911",
+        href: "tel:+32496804752",
         target: null,
       },
     ],

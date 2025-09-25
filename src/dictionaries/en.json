@@ -127,7 +127,7 @@
       "phone": {
         "title": "By phone",
         "description": "Ask all your questions live!",
-        "content": "+32 (0)28 96 89 11"
+        "content": "+32 496 80 47 52"
       }
     },
     "hours": {
@@ -162,7 +162,7 @@
       "founder": {
         "title": "The founder's vision",
         "description": [
-          "Founder of My Compta, Mr. Abou Farhat is a chartered accountant registered with the professional body and has more than 16 years of experience in accounting, taxation and business management.",
+          "With over 20 years of experience as a chartered accountant, our founder has extensive expertise in accounting, taxation, and business management.",
           "Rigorous and attentive, he created My Compta in 2020 to offer personalized and digitalized support to self-employed, small businesses and individuals throughout Belgium."
         ]
       }
@@ -333,7 +333,7 @@
     "contact": {
       "title": "Contact",
       "email": "info@my-compta.be",
-      "phone": "028 96 89 11"
+      "phone": "+32 496 80 47 52"
     },
     "certification": {
       "title": "ITAA Member",
