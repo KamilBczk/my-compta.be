@@ -27,21 +27,25 @@ export default function Hero({ lang, dictionary, office }: HeroProps) {
   }
 
   return (
-    <div className="max-h-[1080px] min-h-screen w-full flex items-center justify-center">
-      <div className="absolute -z-10 bottom-0 left-0 right-0">
+    <div className="max-h-[1080px] min-h-[600px] md:min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="absolute -z-10 w-full h-full">
         <Image
           src={backgroundHero}
           className="w-full h-full object-cover"
           alt="Bg Triangle"
         />
       </div>
-      <div className=" flex flex-col items-center justify-center gap-4">
-        <div className="text-white text-center max-w-[800px]">
-          <div className="text-4xl font-black leading-relaxed">
-            <h2>"{dictionary.hero.tagline}"</h2>
+      <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 lg:gap-8">
+        <div className="text-white text-center max-w-[800px] w-full">
+          <div className="text-2xl sm:text-3xl md:text-4xl font-black leading-relaxed">
+            <h2 className="mb-2 sm:mb-4">
+              <i>«{dictionary.hero.tagline}.»</i>
+            </h2>
             <h1>{title}</h1>
           </div>
-          <p className="max-w-[500px] mx-auto">{description}</p>
+          <p className="max-w-[500px] mx-auto text-sm sm:text-base lg:text-lg mt-4 sm:mt-6">
+            {description}
+          </p>
         </div>
         <Button variant="gradient" href={`/${lang}/contact`}>
           {dictionary.hero.ctaButton}

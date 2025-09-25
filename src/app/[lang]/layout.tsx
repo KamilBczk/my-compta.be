@@ -57,6 +57,11 @@ export default async function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
+        <script
+          defer
+          src="https://umami.kago-group.com/script.js"
+          data-website-id="e72f14a1-10f3-4297-aff7-4d5fc7687367"
+        />
       </head>
       <body className={`${dmSans.variable} antialiased`}>
         <FloatingActionButton lang={lang as "fr" | "en"} />

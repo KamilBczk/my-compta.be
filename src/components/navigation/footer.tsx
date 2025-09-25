@@ -105,7 +105,7 @@ export default function Footer({ dictionary }: FooterProps) {
               </p>
             </div>
             {footerItems.map((item, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-left md:text-center">
                 {item.map((item, index) => (
                   <div key={index}>
                     {item.href ? (
@@ -141,7 +141,7 @@ export default function Footer({ dictionary }: FooterProps) {
       </div>
       <div className="mt-[2px] bg-[#025EAC] py-[25px] text-white">
         <Container>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-2">
             <p>
               {dictionary.footer.credits.madeBy}{" "}
               <a
@@ -153,7 +153,7 @@ export default function Footer({ dictionary }: FooterProps) {
                 {dictionary.footer.credits.company}
               </a>
             </p>
-            <p className="absolute left-1/2 transform -translate-x-1/2">
+            <p className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
               {dictionary.footer.credits.copyright}
             </p>
           </div>

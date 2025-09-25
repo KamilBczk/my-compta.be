@@ -15,7 +15,7 @@ export default function Section({
 }: SectionProps) {
   return (
     <div
-      className={`py-[200px] ${
+      className={`py-[100px] md:py-[200px] ${
         withBorder ? "border-y-[1px] border-[#025EAC]" : ""
       } relative ${className} ${color === "gray" ? "bg-[#F9FAFC]" : ""}`}
     >

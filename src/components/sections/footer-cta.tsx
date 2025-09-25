@@ -34,10 +34,10 @@ export default function FooterCta({
                   {dictionary.footerCta.description}
                 </p>
               </div>
-              <div className="flex gap-8">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-auto">
                 <button
                   onClick={handleCallbackClick}
-                  className="inline-block cursor-pointer px-8 py-3 rounded-md transition-all duration-300 ease-in-out border-2 border-[#025EAC] text-[#025EAC] bg-transparent hover:bg-[#025EAC] hover:text-white"
+                  className="inline-block cursor-pointer px-8 py-3 rounded-md transition-all duration-300 ease-in-out border-2 border-[#025EAC] text-[#025EAC] bg-transparent hover:bg-[#025EAC] hover:text-white w-full sm:w-auto"
                 >
                   {dictionary.footerCta.callbackButton}
                 </button>
