@@ -6,11 +6,15 @@ import Separator from "../separator";
 import { Dictionary } from "@/utils/useDictionary";
 
 interface FooterProps {
+  lang: "fr" | "en";
   dictionary: Dictionary;
 }
 
-export default function Footer({ dictionary }: FooterProps) {
+export default function Footer({ lang, dictionary }: FooterProps) {
   const { logoFooter } = getImages();
+
+  const legalUrl = `/${lang}/mentions-legales`;
+  const privacyUrl = `/${lang}/politique-de-confidentialite`;
 
   const footerItems = [
     [
@@ -71,18 +75,13 @@ export default function Footer({ dictionary }: FooterProps) {
         target: null,
       },
       {
-        label: dictionary.footer.links.sitemap,
-        href: "/sitemap.xml",
-        target: null,
-      },
-      {
         label: dictionary.footer.links.legal,
-        href: "/mentions-legales",
+        href: legalUrl,
         target: null,
       },
       {
         label: dictionary.footer.links.privacy,
-        href: "/politique-de-confidentialite",
+        href: privacyUrl,
         target: null,
       },
     ],

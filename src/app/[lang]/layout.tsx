@@ -70,7 +70,7 @@ export default async function RootLayout({
         {!isContactPage && (
           <FooterCta lang={lang as "fr" | "en"} dictionary={dictionary} />
         )}
-        <Footer dictionary={dictionary} />
+        <Footer lang={lang as "fr" | "en"} dictionary={dictionary} />
       </body>
     </html>
   );

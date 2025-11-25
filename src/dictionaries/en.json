@@ -342,7 +342,6 @@
     },
     "links": {
       "title": "Useful links",
-      "sitemap": "Site map",
       "legal": "Legal notice",
       "privacy": "Privacy policy"
     },
@@ -350,6 +349,137 @@
       "madeBy": "Made by:",
       "company": "Kago Group",
       "copyright": "© 2025. My Compta. All rights reserved."
+    }
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "company": {
+      "title": "Company Information",
+      "name": "Company name",
+      "legalForm": "Legal form",
+      "legalFormValue": "Limited liability company",
+      "bce": "Company number (BCE)",
+      "vat": "VAT number",
+      "address": "Registered office address",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "management": {
+      "title": "Management",
+      "manager": "Manager"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "provider": "Hosting provider",
+      "location": "Server location",
+      "locationValue": "Paris servers",
+      "deployment": "Website deployment"
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "content": "This entire website is subject to Belgian and international copyright and intellectual property law. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations."
+    },
+    "liability": {
+      "title": "Liability",
+      "content": "MY COMPTA strives to ensure the accuracy and updates of the information published on this site. However, MY COMPTA cannot guarantee the accuracy, precision or completeness of the information made available on this site and disclaims all liability for any inaccuracy, inexactitude or omission relating to information available on this site."
+    },
+    "dispute": {
+      "title": "Disputes",
+      "content": "For any complaint or dispute, you can contact us at the following address:"
+    },
+    "law": {
+      "title": "Applicable Law",
+      "content": "These legal notices are subject to Belgian law. In case of dispute, the courts of Brussels shall have sole jurisdiction."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated",
+    "intro": {
+      "title": "Introduction",
+      "content": "MY COMPTA is committed to protecting the privacy of its clients and visitors. This privacy policy explains how we collect, use and protect your personal data in accordance with the General Data Protection Regulation (GDPR)."
+    },
+    "controller": {
+      "title": "Data Controller",
+      "name": "Name",
+      "address": "Address",
+      "email": "Email"
+    },
+    "dataCollected": {
+      "title": "Data Collected",
+      "intro": "We collect the following data:",
+      "contact": {
+        "title": "Via the contact form",
+        "items": [
+          "First and last name",
+          "Email address",
+          "Phone number",
+          "Company name (optional)",
+          "Message"
+        ]
+      },
+      "tracking": {
+        "title": "Navigation data (via Umami Analytics)",
+        "items": [
+          "Anonymized IP address",
+          "Pages visited",
+          "Connection time and date",
+          "Approximate location (country/city)",
+          "Browser type and device"
+        ]
+      }
+    },
+    "purpose": {
+      "title": "Purpose of Processing",
+      "items": [
+        "Respond to your contact and information requests",
+        "Provide our accounting and tax services",
+        "Improve user experience on our website",
+        "Analyze traffic statistics (anonymously)",
+        "Comply with our legal and regulatory obligations"
+      ]
+    },
+    "legalBasis": {
+      "title": "Legal Basis",
+      "content": "The processing of your data is based on your consent (when submitting the form), the execution of a contract, or our legal obligations as an accountant."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "content": "Your personal data is retained for a period of 10 years from our last contact or the end of our contractual relationship, in accordance with legal obligations in accounting and tax matters."
+    },
+    "cookies": {
+      "title": "Cookies and Similar Technologies",
+      "intro": "Our site uses cookies to improve your browsing experience:",
+      "analytics": {
+        "title": "Umami Analytics",
+        "content": "We use Umami, a privacy-friendly analytics tool that does not collect any personally identifiable data and does not require a consent banner. Data is anonymized and aggregated."
+      }
+    },
+    "rights": {
+      "title": "Your Rights",
+      "intro": "In accordance with GDPR, you have the following rights:",
+      "items": [
+        "Right of access: obtain a copy of your personal data",
+        "Right of rectification: correct inaccurate data",
+        "Right to erasure: request deletion of your data",
+        "Right to restriction of processing",
+        "Right to data portability",
+        "Right to object to processing",
+        "Right to withdraw your consent at any time"
+      ],
+      "contact": "To exercise your rights, contact us at:"
+    },
+    "security": {
+      "title": "Data Security",
+      "content": "We implement appropriate technical and organizational measures to protect your data against unauthorized access, modification, disclosure or destruction. Our servers are hosted by OVH France (Paris) and deployment is managed by Kago Group."
+    },
+    "sharing": {
+      "title": "Data Sharing",
+      "content": "Your data is never sold to third parties. It may be shared only with our technical service providers (hosting, emails) strictly within the framework of providing our services and under confidentiality agreement."
+    },
+    "updates": {
+      "title": "Changes to this Policy",
+      "content": "We reserve the right to modify this privacy policy at any time. Any modification will be published on this page with an update date."
     }
   }
 }
