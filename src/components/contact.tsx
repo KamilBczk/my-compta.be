@@ -64,7 +64,7 @@ export default function Contact({ dictionary, bannerImage }: ContactProps) {
       title: dictionary.contact.info.phone.title,
       description: dictionary.contact.info.phone.description,
       content: dictionary.contact.info.phone.content,
-      href: "tel:+32496804752",
+      href: "tel:+3202318340",
     },
   ];
 
