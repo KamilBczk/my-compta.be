@@ -2,6 +2,17 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { EmailTemplate } from "./template";
 
+// Fonction pour échapper les caractères HTML et prévenir les XSS
+function escapeHtml(unsafe: string): string {
+  if (!unsafe) return "";
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -28,22 +39,22 @@ export async function POST(request: Request) {
       // Demande de rappel
       content = `
         <p style="color: #000000;"><strong>Type:</strong> Demande de rappel</p>
-        <p style="color: #000000;"><strong>Prénom:</strong> ${firstName}</p>
-        <p style="color: #000000;"><strong>Téléphone:</strong> ${phone}</p>
-        <p style="color: #000000;"><strong>Date:</strong> ${formattedDate}</p>
+        <p style="color: #000000;"><strong>Prénom:</strong> ${escapeHtml(firstName)}</p>
+        <p style="color: #000000;"><strong>Téléphone:</strong> ${escapeHtml(phone)}</p>
+        <p style="color: #000000;"><strong>Date:</strong> ${escapeHtml(formattedDate)}</p>
       `;
       subject = "Nouvelle demande de rappel";
     } else {
       // Formulaire de contact général
       content = `
         <p style="color: #000000;"><strong>Type:</strong> Contact général</p>
-        <p style="color: #000000;"><strong>Prénom:</strong> ${firstName}</p>
-        <p style="color: #000000;"><strong>Nom:</strong> ${lastName}</p>
-        <p style="color: #000000;"><strong>Téléphone:</strong> ${phone}</p>
-        <p style="color: #000000;"><strong>Société:</strong> ${company || "Non spécifié"}</p>
-        <p style="color: #000000;"><strong>Email:</strong> ${email}</p>
-        <p style="color: #000000;"><strong>Message:</strong> ${message}</p>
-        <p style="color: #000000;"><strong>Date:</strong> ${formattedDate}</p>
+        <p style="color: #000000;"><strong>Prénom:</strong> ${escapeHtml(firstName)}</p>
+        <p style="color: #000000;"><strong>Nom:</strong> ${escapeHtml(lastName)}</p>
+        <p style="color: #000000;"><strong>Téléphone:</strong> ${escapeHtml(phone)}</p>
+        <p style="color: #000000;"><strong>Société:</strong> ${escapeHtml(company || "Non spécifié")}</p>
+        <p style="color: #000000;"><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p style="color: #000000;"><strong>Message:</strong> ${escapeHtml(message)}</p>
+        <p style="color: #000000;"><strong>Date:</strong> ${escapeHtml(formattedDate)}</p>
       `;
       subject = "Nouveau message depuis le formulaire de contact";
     }
