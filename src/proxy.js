@@ -21,7 +21,7 @@ function getLocale(request) {
   return "fr";
 }
 
-export async function middleware(request) {
+export async function proxy(request) {
   // const authResult = await auth(request);
   // if (authResult) return authResult;
 

@@ -9,12 +9,12 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         has: [
           {
-            type: 'header',
+            type: 'header' as const,
             key: 'x-forwarded-proto',
             value: 'http',
           },
           {
-            type: 'header',
+            type: 'header' as const,
             key: 'host',
             value: 'my-compta.be',
           },
