@@ -366,7 +366,7 @@
     },
     "management": {
       "title": "Gestion",
-      "manager": "Gérant"
+      "manager": "Administrateur"
     },
     "hosting": {
       "title": "Hébergement",
