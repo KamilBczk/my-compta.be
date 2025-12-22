@@ -7,6 +7,8 @@ import getImages from "@/utils/getImages";
 import HeaderItems from "./header-items";
 import Separator from "../separator";
 import { Dictionary } from "@/utils/useDictionary";
+import contactUnderline from "@/assets/contact-underline.svg";
+import contactUnderlineWhite from "@/assets/contact-underline-white.svg";
 
 interface HeaderProps {
   lang: "fr" | "en";
@@ -62,9 +64,16 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                     {index === links.length - 1 ? (
                       <a
                         href={link.href}
-                        className="bg-white text-[#025EAC] px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200"
+                        className="bg-white text-[#025EAC] px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 inline-flex flex-col items-center gap-0.5"
                       >
-                        {link.label}
+                        <span className="relative">
+                          {link.label}
+                          <Image
+                            src={contactUnderline}
+                            alt=""
+                            className="absolute -bottom-1 left-0 w-full h-auto"
+                          />
+                        </span>
                       </a>
                     ) : link.label === dictionary.navigation.services ? (
                       <div className="relative">
@@ -167,10 +176,17 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                         {index === links.length - 1 ? (
                           <a
                             href={link.href}
-                            className="block mx-4 bg-[#025EAC] text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-[#024a94] transition-colors duration-200"
+                            className="flex flex-col items-center mx-4 bg-[#025EAC] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#024a94] transition-colors duration-200"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
-                            {link.label}
+                            <span className="relative">
+                              {link.label}
+                              <Image
+                                src={contactUnderlineWhite}
+                                alt=""
+                                className="absolute -bottom-1 left-0 w-full h-auto"
+                              />
+                            </span>
                           </a>
                         ) : link.label === dictionary.navigation.services ? (
                           <div>
