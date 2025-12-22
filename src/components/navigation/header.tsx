@@ -131,11 +131,13 @@ export default function Header({ lang, dictionary }: HeaderProps) {
               </ul>
 
               {/* Language Selector Desktop */}
-              <div className="relative">
+              <div
+                className="relative"
+                onMouseEnter={() => setIsLangDropdownOpen(true)}
+                onMouseLeave={() => setIsLangDropdownOpen(false)}
+              >
                 <button
                   onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                  onMouseEnter={() => setIsLangDropdownOpen(true)}
-                  onMouseLeave={() => setIsLangDropdownOpen(false)}
                   className="flex items-center gap-1 text-white hover:text-gray-200 transition-colors duration-200 uppercase font-medium"
                 >
                   {lang}
@@ -157,11 +159,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 </button>
 
                 {isLangDropdownOpen && (
-                  <div
-                    className="absolute top-full left-0 mt-2 w-24 bg-white rounded-lg shadow-lg py-1 z-50"
-                    onMouseEnter={() => setIsLangDropdownOpen(true)}
-                    onMouseLeave={() => setIsLangDropdownOpen(false)}
-                  >
+                  <div className="absolute top-full left-0 mt-2 w-24 bg-white rounded-lg shadow-lg py-1 z-50">
                     <a
                       href={getAlternateLanguageUrl()}
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-50 transition-colors duration-200 uppercase font-medium text-center"
