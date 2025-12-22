@@ -159,13 +159,15 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 </button>
 
                 {isLangDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-24 bg-white rounded-lg shadow-lg py-1 z-50">
-                    <a
-                      href={getAlternateLanguageUrl()}
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-50 transition-colors duration-200 uppercase font-medium text-center"
-                    >
-                      {lang === "fr" ? "EN" : "FR"}
-                    </a>
+                  <div className="absolute top-full left-0 pt-2 z-50">
+                    <div className="bg-white rounded-lg shadow-lg py-1 w-24">
+                      <a
+                        href={getAlternateLanguageUrl()}
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-50 transition-colors duration-200 uppercase font-medium text-center"
+                      >
+                        {lang === "fr" ? "EN" : "FR"}
+                      </a>
+                    </div>
                   </div>
                 )}
               </div>
