@@ -66,69 +66,11 @@ export default function Header({ lang, dictionary }: HeaderProps) {
               </div>
 
               {/* Menu desktop */}
-              <ul className="hidden lg:flex items-center gap-4 text-white">
-                {links.map((link, index) => (
-                  <li key={index} className="relative">
-                    {index === links.length - 1 ? (
-                      <>
-                        {/* Language Selector */}
-                        <div className="relative mr-4">
-                          <button
-                            onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                            onMouseEnter={() => setIsLangDropdownOpen(true)}
-                            onMouseLeave={() => setIsLangDropdownOpen(false)}
-                            className="flex items-center gap-1 hover:text-gray-200 transition-colors duration-200 uppercase font-medium"
-                          >
-                            {lang}
-                            <svg
-                              className={`w-4 h-4 transform transition-transform duration-200 ${
-                                isLangDropdownOpen ? "rotate-180" : ""
-                              }`}
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M19 9l-7 7-7-7"
-                              />
-                            </svg>
-                          </button>
-
-                          {isLangDropdownOpen && (
-                            <div
-                              className="absolute top-full left-0 mt-2 w-24 bg-white rounded-lg shadow-lg py-1 z-50"
-                              onMouseEnter={() => setIsLangDropdownOpen(true)}
-                              onMouseLeave={() => setIsLangDropdownOpen(false)}
-                            >
-                              <a
-                                href={getAlternateLanguageUrl()}
-                                className="block px-4 py-2 text-gray-800 hover:bg-gray-50 transition-colors duration-200 uppercase font-medium text-center"
-                              >
-                                {lang === "fr" ? "EN" : "FR"}
-                              </a>
-                            </div>
-                          )}
-                        </div>
-                      </>
-                    ) : null}
-                    {index === links.length - 1 ? (
-                      <a
-                        href={link.href}
-                        className="bg-white text-[#025EAC] px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 inline-flex flex-col items-center gap-0.5"
-                      >
-                        <span className="relative">
-                          {link.label}
-                          <Image
-                            src={contactUnderline}
-                            alt=""
-                            className="absolute -bottom-1 left-0 w-full h-auto"
-                          />
-                        </span>
-                      </a>
-                    ) : link.label === dictionary.navigation.services ? (
+              <div className="hidden lg:flex items-center gap-4">
+                <ul className="flex items-center gap-4 text-white">
+                  {links.map((link, index) => (
+                    <li key={index} className="relative">
+                      {index === links.length - 1 ? null : link.label === dictionary.navigation.services ? (
                       <div className="relative">
                         <button
                           onClick={() =>
@@ -187,6 +129,64 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                   </li>
                 ))}
               </ul>
+
+              {/* Language Selector Desktop */}
+              <div className="relative">
+                <button
+                  onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
+                  onMouseEnter={() => setIsLangDropdownOpen(true)}
+                  onMouseLeave={() => setIsLangDropdownOpen(false)}
+                  className="flex items-center gap-1 text-white hover:text-gray-200 transition-colors duration-200 uppercase font-medium"
+                >
+                  {lang}
+                  <svg
+                    className={`w-4 h-4 transform transition-transform duration-200 ${
+                      isLangDropdownOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                {isLangDropdownOpen && (
+                  <div
+                    className="absolute top-full left-0 mt-2 w-24 bg-white rounded-lg shadow-lg py-1 z-50"
+                    onMouseEnter={() => setIsLangDropdownOpen(true)}
+                    onMouseLeave={() => setIsLangDropdownOpen(false)}
+                  >
+                    <a
+                      href={getAlternateLanguageUrl()}
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-50 transition-colors duration-200 uppercase font-medium text-center"
+                    >
+                      {lang === "fr" ? "EN" : "FR"}
+                    </a>
+                  </div>
+                )}
+              </div>
+
+              {/* Contact Button Desktop */}
+              <a
+                href={`/${lang}/contact`}
+                className="bg-white text-[#025EAC] px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 inline-flex flex-col items-center gap-0.5"
+              >
+                <span className="relative">
+                  {dictionary.navigation.contact}
+                  <Image
+                    src={contactUnderline}
+                    alt=""
+                    className="absolute -bottom-1 left-0 w-full h-auto"
+                  />
+                </span>
+              </a>
+            </div>
 
               {/* Bouton menu mobile */}
               <button
