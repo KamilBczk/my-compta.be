@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import Container from "../kago-ui/Container";
 import getImages from "@/utils/getImages";
@@ -18,8 +19,15 @@ interface HeaderProps {
 export default function Header({ lang, dictionary }: HeaderProps) {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const pathname = usePathname();
   const links = HeaderItems({ lang, dictionary });
   const { logoHeader } = getImages();
+
+  const getAlternateLanguageUrl = () => {
+    const newLang = lang === "fr" ? "en" : "fr";
+    return pathname.replace(`/${lang}`, `/${newLang}`);
+  };
 
   const services = [
     {
@@ -61,6 +69,51 @@ export default function Header({ lang, dictionary }: HeaderProps) {
               <ul className="hidden lg:flex items-center gap-4 text-white">
                 {links.map((link, index) => (
                   <li key={index} className="relative">
+                    {index === links.length - 1 ? (
+                      <>
+                        {/* Language Selector */}
+                        <div className="relative mr-4">
+                          <button
+                            onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
+                            onMouseEnter={() => setIsLangDropdownOpen(true)}
+                            onMouseLeave={() => setIsLangDropdownOpen(false)}
+                            className="flex items-center gap-1 hover:text-gray-200 transition-colors duration-200 uppercase font-medium"
+                          >
+                            {lang}
+                            <svg
+                              className={`w-4 h-4 transform transition-transform duration-200 ${
+                                isLangDropdownOpen ? "rotate-180" : ""
+                              }`}
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 9l-7 7-7-7"
+                              />
+                            </svg>
+                          </button>
+
+                          {isLangDropdownOpen && (
+                            <div
+                              className="absolute top-full left-0 mt-2 w-24 bg-white rounded-lg shadow-lg py-1 z-50"
+                              onMouseEnter={() => setIsLangDropdownOpen(true)}
+                              onMouseLeave={() => setIsLangDropdownOpen(false)}
+                            >
+                              <a
+                                href={getAlternateLanguageUrl()}
+                                className="block px-4 py-2 text-gray-800 hover:bg-gray-50 transition-colors duration-200 uppercase font-medium text-center"
+                              >
+                                {lang === "fr" ? "EN" : "FR"}
+                              </a>
+                            </div>
+                          )}
+                        </div>
+                      </>
+                    ) : null}
                     {index === links.length - 1 ? (
                       <a
                         href={link.href}
@@ -171,6 +224,44 @@ export default function Header({ lang, dictionary }: HeaderProps) {
               <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg mt-0 z-40">
                 <div className="py-4">
                   <ul className="space-y-2">
+                    {/* Language Selector Mobile */}
+                    <li>
+                      <div className="px-4 py-2">
+                        <button
+                          onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
+                          className="flex items-center justify-between w-full text-gray-800 hover:bg-gray-50 transition-colors duration-200 py-2"
+                        >
+                          <span className="font-medium uppercase">{lang === "fr" ? "Français" : "English"}</span>
+                          <svg
+                            className={`w-4 h-4 transform transition-transform duration-200 ${
+                              isLangDropdownOpen ? "rotate-180" : ""
+                            }`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        {isLangDropdownOpen && (
+                          <div className="mt-2 bg-gray-50 rounded-lg">
+                            <a
+                              href={getAlternateLanguageUrl()}
+                              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 font-medium rounded-lg"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                              {lang === "fr" ? "English" : "Français"}
+                            </a>
+                          </div>
+                        )}
+                      </div>
+                    </li>
+
                     {links.map((link, index) => (
                       <li key={index}>
                         {index === links.length - 1 ? (
