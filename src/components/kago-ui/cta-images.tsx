@@ -1,4 +1,6 @@
-import React, { ReactNode } from "react";
+'use client';
+
+import React, { ReactNode, useState } from "react";
 
 interface CtaImagesItem {
   icon: ReactNode;
@@ -19,9 +21,19 @@ interface CtaImagesProps {
 
 // Composant pour une carte individuelle avec animation flip
 function FlipCard({ item }: { item: CtaImagesItem }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleInteraction = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
-    <div className="group [perspective:1000px] h-64 w-full">
-      <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <div
+      className="group [perspective:1000px] h-64 w-full cursor-pointer"
+      onClick={handleInteraction}
+      onTouchStart={handleInteraction}
+    >
+      <div className={`relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
         {/* Face avant */}
         <div className="absolute inset-0 h-full w-full bg-white border-[1px] border-gray-200 rounded-2xl p-6 shadow-sm [backface-visibility:hidden] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center mb-4">
@@ -65,8 +77,8 @@ export default function CtaImages({
         }`}
       >
         <div className="w-full px-4 lg:w-6/12">
-          <div className="flex items-center -mx-3 sm:-mx-4">
-            <div className="w-full px-3 sm:px-4 xl:w-1/2">
+          <div className="flex flex-col md:flex-row items-center -mx-3 sm:-mx-4">
+            <div className="w-full px-3 sm:px-4 md:w-1/2">
               <div className="py-3 sm:py-4">
                 <FlipCard item={items[0]} />
               </div>
@@ -74,7 +86,7 @@ export default function CtaImages({
                 <FlipCard item={items[1]} />
               </div>
             </div>
-            <div className="w-full px-3 sm:px-4 xl:w-1/2">
+            <div className="w-full px-3 sm:px-4 md:w-1/2">
               <div className="relative z-10 my-4">
                 <FlipCard item={items[2]} />
               </div>
