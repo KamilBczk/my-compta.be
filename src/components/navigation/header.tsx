@@ -226,22 +226,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                   <ul className="space-y-2">
                     {links.map((link, index) => (
                       <li key={index}>
-                        {index === links.length - 1 ? (
-                          <a
-                            href={link.href}
-                            className="flex flex-col items-center mx-4 bg-[#025EAC] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#024a94] transition-colors duration-200"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                          >
-                            <span className="relative">
-                              {link.label}
-                              <Image
-                                src={contactUnderlineWhite}
-                                alt=""
-                                className="absolute -bottom-1 left-0 w-full h-auto"
-                              />
-                            </span>
-                          </a>
-                        ) : link.label === dictionary.navigation.services ? (
+                        {index === links.length - 1 ? null : link.label === dictionary.navigation.services ? (
                           <div>
                             <button
                               onClick={() =>
@@ -299,12 +284,12 @@ export default function Header({ lang, dictionary }: HeaderProps) {
 
                     {/* Language Selector Mobile */}
                     <li>
-                      <div className="px-4 py-2">
+                      <div>
                         <button
                           onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                          className="flex items-center justify-between w-full text-gray-800 hover:bg-gray-50 transition-colors duration-200 py-2"
+                          className="flex items-center justify-between w-full px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors duration-200"
                         >
-                          <span className="font-medium">{lang === "fr" ? "Français" : "English"}</span>
+                          {lang === "fr" ? "Français" : "English"}
                           <svg
                             className={`w-4 h-4 transform transition-transform duration-200 ${
                               isLangDropdownOpen ? "rotate-180" : ""
@@ -322,17 +307,37 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                           </svg>
                         </button>
                         {isLangDropdownOpen && (
-                          <div className="mt-2 bg-gray-50 rounded-lg">
+                          <div className="bg-gray-50">
                             <a
                               href={getAlternateLanguageUrl()}
-                              className="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 font-medium rounded-lg"
+                              className="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 border-b border-gray-200 last:border-b-0"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
-                              {lang === "fr" ? "English" : "Français"}
+                              <div className="font-medium text-sm">
+                                {lang === "fr" ? "English" : "Français"}
+                              </div>
                             </a>
                           </div>
                         )}
                       </div>
+                    </li>
+
+                    {/* Contact Button Mobile */}
+                    <li>
+                      <a
+                        href={`/${lang}/contact`}
+                        className="flex flex-col items-center mx-4 bg-[#025EAC] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#024a94] transition-colors duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          {dictionary.navigation.contact}
+                          <Image
+                            src={contactUnderlineWhite}
+                            alt=""
+                            className="absolute -bottom-1 left-0 w-full h-auto"
+                          />
+                        </span>
+                      </a>
                     </li>
                   </ul>
                 </div>
