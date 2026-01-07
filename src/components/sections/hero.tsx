@@ -39,7 +39,7 @@ export default function Hero({ lang, dictionary, office }: HeroProps) {
         <div className="text-white text-center max-w-[800px] w-full">
           <div className="text-2xl sm:text-3xl md:text-4xl font-black leading-relaxed">
             <h2 className="mb-2 sm:mb-4">
-              <i>«{dictionary.hero.tagline}.»</i>
+              <i className="sm:whitespace-nowrap">«{dictionary.hero.tagline}.»</i>
             </h2>
             <h1>{title}</h1>
           </div>

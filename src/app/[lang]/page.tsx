@@ -5,6 +5,7 @@ import getImages from "@/utils/getImages";
 import Competences from "@/components/sections/competences";
 import { getDictionary } from "@/dictionaries/getDictionary";
 import { generateMetadata as generateSEOMetadata } from "@/utils/generateMetadata";
+import { Testimonials } from "@/components/sections/testimonials";
 
 interface HomeProps {
   params: Promise<{
@@ -35,6 +36,7 @@ export default async function Home({ params }: HomeProps) {
         lang={lang as "fr" | "en"}
         dictionary={dictionary}
       />
+      <Testimonials lang={lang as "fr" | "en"} />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import {
   getOfficeParams,
 } from "@/utils/offices";
 import { notFound } from "next/navigation";
+import { Testimonials } from "@/components/sections/testimonials";
 
 interface OfficePageProps {
   params: Promise<{
@@ -81,6 +82,7 @@ export default async function OfficePage({ params }: OfficePageProps) {
         lang={lang as "fr" | "en"}
         dictionary={dictionary}
       />
+      <Testimonials lang={lang as "fr" | "en"} />
     </div>
   );
 }
