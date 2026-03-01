@@ -60,7 +60,7 @@ export default async function RootLayout({
         <script
           defer
           src="https://umami.kago-group.com/script.js"
-          data-website-id="e72f14a1-10f3-4297-aff7-4d5fc7687367"
+          data-website-id="5e68e2a8-5800-4d8e-83fb-1b028aebdae5"
         />
       </head>
       <body className={`${dmSans.variable} antialiased`}>
